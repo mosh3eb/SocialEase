@@ -1,0 +1,124 @@
+:root {
+    --primary-light: #e0f2ff;
+    --secondary-light: #f0f7ff;
+    --text-light: #2c3e50;
+    --primary-dark: #1a2634;
+    --secondary-dark: #2c3e50;
+    --text-dark: #e0f2ff;
+}
+
+body {
+    transition: background-color 0.3s, color 0.3s;
+    background-color: var(--primary-light);
+    color: var(--text-light);
+}
+
+body.dark-mode {
+    background-color: var(--primary-dark);
+    color: var(--text-dark);
+}
+
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.glass-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.45);
+}
+
+.neumorphic {
+    border-radius: 20px;
+    background: var(--primary-light);
+    box-shadow: 8px 8px 16px #c8d0e7,
+               -8px -8px 16px #ffffff;
+    transition: all 0.3s ease;
+}
+
+.dark-mode .neumorphic {
+    background: var(--primary-dark);
+    box-shadow: 8px 8px 16px #131b25,
+               -8px -8px 16px #21313f;
+}
+
+.nav-link {
+    position: relative;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: currentColor;
+    transition: width 0.3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.anxiety-meter {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: conic-gradient(#4CAF50 0%, #FFC107 50%, #FF5252 100%);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.anxiety-meter::before {
+    content: '';
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: var(--primary-light);
+}
+
+.dark-mode .anxiety-meter::before {
+    background: var(--primary-dark);
+}
+
+.progress-ring {
+    transform: rotate(-90deg);
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+
+.float-animation {
+    animation: float 6s ease-in-out infinite;
+}
+
+.event-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.event-card:hover {
+    transform: scale(1.02);
+}

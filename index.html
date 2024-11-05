@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialEase - Your Social Companion</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div id="particles-js"></div>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-card bg-opacity-90">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold">SocialEase</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#events" class="nav-link">Events</a>
+                    <a href="#simulator" class="nav-link">Simulator</a>
+                    <a href="#community" class="nav-link">Community</a>
+                    <a href="#profile" class="nav-link">Profile</a>
+                </div>
+                <button id="darkModeToggle" class="p-2 rounded-full neumorphic">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="min-h-screen flex items-center justify-center pt-20">
+        <div class="container mx-auto px-6">
+            <div class="glass-card max-w-4xl mx-auto text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-8">Navigate Social Situations with Confidence</h1>
+                <p class="text-xl mb-8">Your AI-powered companion for social success</p>
+                <button class="bg-blue-500 text-white px-8 py-3 rounded-full hover:bg-blue-600 transition">
+                    Get Started
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="events" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center">Upcoming Social Events</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Event Cards -->
+                <div class="glass-card event-card">
+                    <div class="text-xl font-bold mb-4">Office Party</div>
+                    <p class="mb-4">Get personalized conversation starters and networking tips</p>
+                    <button class="bg-blue-500 text-white px-6 py-2 rounded-full hover:bg-blue-600 transition">
+                        Prepare Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Simulator -->
+    <section id="simulator" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center">Practice Social Scenarios</h2>
+            <div class="glass-card max-w-4xl mx-auto">
+                <div class="scenario-container p-6">
+                    <h3 class="text-2xl mb-4">Current Scenario: Networking Event</h3>
+                    <div class="conversation-simulation mb-6">
+                    </div>
+                    <div class="response-options grid grid-cols-1 md:grid-cols-2 gap-4">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center">Anxiety Monitor</h2>
+            <div class="glass-card max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-around">
+                <div class="anxiety-meter mb-8 md:mb-0">
+                    <div class="relative z-10 text-2xl font-bold">75%</div>
+                </div>
+                <div class="space-y-4">
+                    <h3 class="text-2xl font-bold">Current Status</h3>
+                    <p>Your anxiety level is moderate</p>
+                    <button class="bg-blue-500 text-white px-6 py-2 rounded-full hover:bg-blue-600 transition">
+                        Get Coping Techniques
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section id="community" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center">Community Support</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Community Cards -->
+                <div class="glass-card">
+                    <h3 class="text-xl font-bold mb-4">Success Stories</h3>
+                    <p>Read how others overcame their social anxiety</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 glass-card mt-20">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">SocialEase</h3>
+                    <p>&copy; 2024 Site. Made By <a href="https://www.linkedin.com/in/Momo">Momo</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+</html>
